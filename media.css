@@ -1,0 +1,137 @@
+.main_button {
+
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+}
+
+.main_button:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 300px;
+    margin-left: 60px;
+    background: #fff;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3ffffff', endColorstr='#b3ffffff', GradientType=0);
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    z-index: 1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-animation-name: slideme;
+    animation-name: slideme;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slideme {
+    0% {
+        left: -30px;
+        margin-left: 0px;
+    }
+
+    30% {
+        left: 110%;
+        margin-left: 80px;
+    }
+
+    100% {
+        left: 110%;
+        margin-left: 80px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+   
+    .facility {
+        width: 25%;
+    }
+
+}
+@media screen and (max-width: 760px) {
+    .space_container {
+        flex-direction: column;
+    }
+    .aparts_title {padding-right: 0;
+    text-align: center;}
+    .aparts_pick {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .aparts_info {
+        width: 100%;
+    }
+    .aparts_img_head{
+        width: auto;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .aparts_info {
+        flex-direction: column;
+        height: auto;
+    }
+    .aparts_text {
+        width: 100%;
+        margin: 20px 0;
+        margin-top: 0;
+    }
+    .main_info {
+        width: 100%;
+    }
+    .around_slide {
+        flex-direction: column;
+    }
+    .aparts_pick {
+        display: none;
+    }
+
+    #id1,
+    #id2,
+    #id3,
+    #id4,
+    #id5 {
+        display: flex;
+    }
+    .facility {
+        width: 50%;
+    }
+.button_price {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    right: 0;
+}
+.menu_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.menu_list a {
+    margin-top: 10px;
+    text-align: center;
+}
+.reviews_container {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 40px;
+}
+}
