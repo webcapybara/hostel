@@ -91,7 +91,9 @@
 
     .menu {
         flex-direction: column;
+        position: relative;
     }
+
 
     .aparts_info {
         flex-direction: column;
@@ -111,6 +113,7 @@
 
     .around_slide {
         flex-direction: column;
+        height: auto;
     }
 
     .aparts_pick {
@@ -139,7 +142,7 @@
     .menu_list {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .menu_list a {

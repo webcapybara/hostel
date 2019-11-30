@@ -20,7 +20,7 @@
 <body>
 
 
-    <div class="main_container menu" data-aos="fade-down" data-aos-delay="500">
+    <div class="main_container menu" data-aos="fade-down" data-aos-delay="500" data-aos-once="true">
         <div class="logo"><img src="logo.png" alt="Logo"></div>
         <div class="menu_list">
             <a class="active " href="#slider"></a>
@@ -71,15 +71,39 @@
                     <div class="vert_title"> Н<br>О<br>М<br>Е<br>Р <br> А </div>
 
                     <ul>
-                        <li onClick="show('id1');">Люкс</li>
-                        <li onClick="show('id2');">Мужской общий</li>
+                        
+                        <li onClick="show('id1');">Мужской общий</li>
+                        <li onClick="show('id2');">Люкс</li>
                         <li onClick="show('id3');">Женский общий</li>
-                        <li onClick="show('id4');">Двухместный с одной кроватью</li>
-                        <li onClick="show('id5');">Четырехместный семейный</li>
+                        <li onClick="show('id4');">Двухместный номер</li>
+                        <li onClick="show('id5');">Четырехместный номер</li>
                     </ul>
 
                 </div>
-                <div id="id1" class="aparts_info   ">
+                <div id="id1" class="aparts_info ">
+                    <div class="aparts_slider swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="aparts_img" src="img/2/1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="aparts_img" src="img/2/2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="aparts_img" src="img/2/3.jpg" alt=""></div>
+                            
+                        </div>
+                        <div class="swiper-pagination swiper-pagination2"></div>
+                    </div>
+                    <div class="aparts_text">
+                        <div class="aparts_title">
+                            Общий номер для мужчин
+                        </div>
+                        <div class="aparts_descr">Бюджетный вариант в большой общей комнате. Большие скидки при оплате
+                            за месяц.
+                        </div>
+                        <div class="aparts_price">От 265₽ за сутки</div>
+                        <div class="main_button button_price"  onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='men-room' ">
+                            Забронировать номер
+                        </div>
+                    </div>
+                </div>
+                <div id="id2" class="aparts_info   ">
                     <div class="aparts_slider swiper-container swiper1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide ms"><img class="aparts_img" src="img/1/1.jpg" alt=""></div>
@@ -97,41 +121,19 @@
                             отдельный душ.
                         </div>
                         <div class="aparts_price">От 1350₽ за сутки</div>
-                        <div class="main_button button_price">
+                        <div class="main_button button_price"  onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='lux-room' ">
                             Забронировать номер
                         </div>
                     </div>
                 </div>
-                <div id="id2" class="aparts_info ">
-                    <div class="aparts_slider swiper-container swiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img class="aparts_img" src="img/2/1.jpg" alt=""></div>
-                            <div class="swiper-slide"><img class="aparts_img" src="img/2/2.jpg" alt=""></div>
-                            <div class="swiper-slide"><img class="aparts_img" src="img/2/3.jpg" alt=""></div>
-                            <div class="swiper-slide"><img class="aparts_img" src="img/2/4.jpg" alt=""></div>
-                        </div>
-                        <div class="swiper-pagination swiper-pagination2"></div>
-                    </div>
-                    <div class="aparts_text">
-                        <div class="aparts_title">
-                            Общий номер для мужчин
-                        </div>
-                        <div class="aparts_descr">Бюджетный вариант в большой общей комнате. Большие скидки при оплате
-                            за месяц.
-                        </div>
-                        <div class="aparts_price">От 265₽ за сутки</div>
-                        <div class="main_button button_price"  onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='human-room' ">
-                            Забронировать номер
-                        </div>
-                    </div>
-                </div>
+                
                 <div id="id3" class="aparts_info ">
                     <div class="aparts_slider swiper-container swiper3">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img class="aparts_img" src="img/3/1.jpg" alt=""></div>
                             <div class="swiper-slide"><img class="aparts_img" src="img/3/2.jpg" alt=""></div>
                             <div class="swiper-slide"><img class="aparts_img" src="img/3/3.jpg" alt=""></div>
-                            <div class="swiper-slide"><img class="aparts_img" src="img/3/4.jpg" alt=""></div>
+                          
                         </div>
                         <div class="swiper-pagination swiper-pagination3"></div>
                     </div>
@@ -143,7 +145,7 @@
                             за месяц.
                         </div>
                         <div class="aparts_price">От 265₽ за сутки</div>
-                        <div class="main_button button_price"  onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='women-roomr' ">
+                        <div class="main_button button_price"  onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='women-room' ">
                             Забронировать номер
                         </div>
                     </div>
@@ -160,13 +162,13 @@
                     </div>
                     <div class="aparts_text ">
                         <div class="aparts_title">
-                            ДВУХМЕСТНЫЙ С ОДНОЙ КРОВАТЬЮ
+                            ДВУХМЕСТНЫЙ номер
                         </div>
-                        <div class="aparts_descr">Отлично подойдет как для семейной пары так и для одинокого
+                        <div class="aparts_descr">Номер с одной кроватью. <br> <br> Отлично подойдет как для семейной пары так и для одинокого
                             путешественника.
                         </div>
                         <div class="aparts_price">От 1000₽ за сутки</div>
-                        <div class="main_button button_price">
+                        <div class="main_button button_price"  onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='2-people-room'" >
                             Забронировать номер
                         </div>
                     </div>
@@ -188,7 +190,7 @@
                         <div class="aparts_descr">Дополнительная двухъярусная кровать для детей или больших компаний.
                         </div>
                         <div class="aparts_price">От 1200₽ за сутки</div>
-                        <div class="main_button button_price">
+                        <div class="main_button button_price"  onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='4-people-room'" >
                             Забронировать номер
                         </div>
                     </div>
@@ -246,7 +248,7 @@
                 width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             <div class="map_text">
                 <p>Санкт-Петербург, Вознесенский проспект 41.</p>
-                <p>+7-953-369-64-97</p>
+                <a href="tel:+79533696497 ">+7-953-369-64-97 </a>
             </div>
         </div>
         <div class="section around" id="around" data-aos="fade-up">
@@ -335,18 +337,19 @@
                 <img src="img/reviews/3.jpg" alt="" class="reviews_img">
             </div>
         </div>
-        <footer>
-            <a href="https://www.facebook.com/RayApartment/"><img src="img/icons/fb.png" alt=""> </a> <a href=""></a>
-            <a href="#"><img src="img/icons/vk.png" alt=""> </a> <a href=""></a>
-            <a href="https://www.instagram.com/ray__apartments/"><img src="img/icons/inst.png" alt=""> </a> <a
-                href=""></a>
-        </footer>
+        
     </div>
+    <footer data-aos="fade-up" data-aos-offset="50px">
+        <a href="https://www.facebook.com/RayApartment/"><img src="img/icons/fb.png" alt=""> </a> <a href=""></a>
+        <!-- <a href="#"><img src="img/icons/vk.png" alt=""> </a> <a href=""></a> -->
+        <a href="https://www.instagram.com/ray__apartments/"><img src="img/icons/inst.png" alt=""> </a> <a
+            href=""></a>
+    </footer>
     <div class="modal1" id="modal_1">
         <div class="modal_form">
             <form action="bot.php" method="POST" id="modal">
                 <p onclick="document.getElementById('modal_1').style.display='none';" class="exit"> X </p>
-                <div class="modal_box">
+                <div class="modal_box" id="modal_box">
 
                     <legend>Оставьте свой номер телефона, <br> и мы Вам перезвоним!</legend>
                     <div class="form-group">
@@ -358,10 +361,13 @@
                         <p>Введите номер телефона</p>
                         <input type="text" class="form-control" id="" name="user_phone" placeholder="89871234565">
                     </div>
-                    <button type="submit" class="modal_button"
-                        onclick="document.getElementById('modal_1').style.display='none';">Отправить заявку</button>
+                    
+                    <!-- <button type="submit" class="modal_button"
+                        onclick="document.getElementById('modal_1').style.display='none';">Отправить заявку</button> -->
+                        <button  onclick="closePop()" type="submit"  class="modal_button"
+                       >Отправить заявку</button>
                 </div>
-
+                <p id="sucsesspop">Сообщение отправленно!</p>
             </form>
         </div>
 

@@ -31,6 +31,10 @@ var swiper1 = new Swiper('.swiper1', {
 var swiper2 = new Swiper('.swiper2', {
     observer: true,
     observeParents: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: '.swiper-pagination2',
         clickable: true,
@@ -166,8 +170,8 @@ AOS.init({
 activecor.init(); */
 
 
-const modalCall = $("[data-modal]");
-const modalClose = $("[data-close]");
+const modalCall = ("[data-modal]");
+const modalClose = ("[data-close]");
 
 modalCall.on("click", function (event) {
     event.preventDefault();
@@ -227,3 +231,19 @@ $(".modal__dialog").on("click", function (event) {
 event.stopPropagation();
 });
 
+
+/* задержка для отправки сообщения */
+
+function closePop(){
+    document.getElementById('modal_box').style.display='none';
+    document.getElementById('sucsesspop').style.display='block';
+    setTimeout(function() {
+        document.getElementById('modal_1').style.display='none';
+        document.getElementById('modal_box').style.display='block';
+        document.getElementById('sucsesspop').style.display='none';
+    
+    }, 3000);
+    
+    console.log("ok");
+    
+}
