@@ -131,7 +131,7 @@ AOS.init({
 });
 
 
-const modalCall = ("[data-modal]");
+/* const modalCall = ("[data-modal]");
 const modalClose = ("[data-close]");
 
 modalCall.on("click", function (event) {
@@ -191,7 +191,7 @@ $(".modal").on("click", function (event) {
 $(".modal__dialog").on("click", function (event) {
 event.stopPropagation();
 });
-
+ */
 
 /* задержка для отправки сообщения */
 
@@ -204,7 +204,20 @@ function closePop(){
         document.getElementById('sucsesspop').style.display='none';
     
     }, 3000);
-    
     console.log("ok");
     
 }
+
+
+function iframeclick() {
+    document.getElementById("map_src").contentWindow.document.body.onclick = function() {
+        document.getElementById('map_src').removeAttribute("srcdoc");
+    document.getElementById('map_src').src ='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.8616322892426!2d30.3050042357883!3d59.92325893269262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630fc4ee7bd8f%3A0xdc2e3f07d02f363d!2z0JLQvtC30L3QtdGB0LXQvdGB0LrQuNC5INC_0YAuLCA0MSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MDA2OA!5e0!3m2!1sru!2sru!4v1572454619141!5m2!1sru!2sru';
+        }
+    }
+    
+
+
+    if(window.matchMedia('(max-width: 768px)').matches){
+        document.getElementById('map_src').srcdoc=('<div  style="width:auto; height:300px;"><img class="mapimg"src="img/map-mobile.jpg" style="height:100%; width:100%;"></div>');
+    };

@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAY APARTMENTS</title>
     <meta name="description" content="Ray Apartments - Гостиница в центре Санкт-Петербура. Места от 265р сутки.">
     <meta name="keywords"
         content="Гостиница СПб, хостел санкт петербугр, хостел в спб недорого, гостиница в спб на длительный срок">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic"
-        rel="stylesheet">
-    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <meta name="yandex-verification" content="a98e7969c04b35d1" />
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>RAY APARTMENTS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -26,10 +26,10 @@
         <div class="logo"><img src="logo.png" alt="Logo"></div>
         <div class="menu_list">
             <a class="active " href="#slider"></a>
-            <a class="go-anchor" href="#apparts">номера</a>
-            <a href="#map">расположение</a>
-            <a href="#around">окрестности</a>
-            <a href="#reviews">отзывы</a>
+            <a class="go-anchor" href="#anchor1">номера</a>
+            <a href="#anchor2">расположение</a>
+            <a href="#anchor3">окрестности</a>
+            <a href="#anchor4">отзывы</a>
         </div>
         <div class="phone">
             <a href="tel:+79533696497 ">+7-953-369-64-97 </a>
@@ -38,20 +38,17 @@
         </div>
 
     </div>
+
     <div class="main_container">
         <section class="section main_slider" id="slider" data-aos="fade-right" data-aos-delay="500">
             <div class="main_info">
                 <div class="main_text">
                     <h1>Светлые<br>европейские<br>апартаменты</h1>
                     <p> от 500₽</p>
-                    <div class="main_button head_button"
+                    <div id="anchor1" class="main_button head_button"
                         onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='main-slider' ">
                         Забронировать номер
                     </div>
-                    <!-- <div class="main_button head_button"
-                        onclick="document.getElementById('modal').style.display='block';">
-                        Забронировать номер
-                    </div> -->
                 </div>
             </div>
             <div class="aparts_slider swiper-container swiper-head">
@@ -65,6 +62,7 @@
 
             </div>
         </section>
+
         <section class="section aparts" id="apparts" data-aos="fade-left" data-aos-delay="500">
             <!-- <h2>
                 Наши номера
@@ -73,16 +71,13 @@
                 <div class="aparts_pick">
                     <!--    <h2 class="numbers">Наши номера</h2> -->
                     <div class="vert_title"> Н<br>О<br>М<br>Е<br>Р <br> А </div>
-
                     <ul>
-
                         <li onClick="show('id1');">Мужской общий</li>
                         <li onClick="show('id2');">Люкс</li>
                         <li onClick="show('id3');">Женский общий</li>
                         <li onClick="show('id4');">Двухместный номер</li>
                         <li onClick="show('id5');">Четырехместный номер</li>
                     </ul>
-
                 </div>
                 <div id="id1" class="aparts_info ">
                     <div class="aparts_slider swiper-container swiper2">
@@ -130,10 +125,8 @@
                             onclick="document.getElementById('modal_1').style.display='flex', document.getElementById('sendclass').value='lux-room' ">
                             Забронировать номер
                         </div>
-
                     </div>
                 </div>
-
                 <div id="id3" class="aparts_info ">
                     <div class="aparts_slider swiper-container swiper3">
                         <div class="swiper-wrapper">
@@ -209,7 +202,6 @@
                         </div>
                     </div>
                 </div>
-
         </section>
         <section class="facilities">
 
@@ -247,7 +239,7 @@
             </div>
             <div class="facility">
                 <img class="facility_img" src="img/icons/microwave.png" alt="">
-                <div class="facility_title">Микроволновая<br>печь</div>
+                <div id="anchor2" class="facility_title">Микроволновая<br>печь</div>
             </div>
 
 
@@ -256,12 +248,12 @@
             <h2>
                 Как нас найти
             </h2>
-
-            <iframe class="maps_map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.8616322892426!2d30.3050042357883!3d59.92325893269262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630fc4ee7bd8f%3A0xdc2e3f07d02f363d!2z0JLQvtC30L3QtdGB0LXQvdGB0LrQuNC5INC_0YAuLCA0MSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MDA2OA!5e0!3m2!1sru!2sru!4v1572454619141!5m2!1sru!2sru"
-                width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            <div class="map_text">
-                <p>Санкт-Петербург, Вознесенский проспект 41.</p>
+            
+            <iframe  class="maps_map" id="map_src" onload="iframeclick()" marginwidth="0" marginheight="0"
+            srcdoc='<div  style="width:auto; height:300px;"><img class="mapimg"src="img/map.jpg" style="height:100%; width:100%;"> 
+             </div>' width="100%" height="300px" frameborder="0" style="border:0;" ></iframe>
+            <div id="anchor3" class="map_text">
+                <p >Санкт-Петербург, Вознесенский проспект 41.</p>
                 <a href="tel:+79533696497 ">+7-953-369-64-97 </a>
             </div>
         </section>
@@ -332,6 +324,7 @@
                                     лепниной, скульптурными элементами, пилястрами и колоннадами. Экскурсии по
                                     дворцу,
                                     однако, стоят нескромных сумм денег и должны быть заказаны заранее.</div>
+                                    <div id="anchor4"></div>
                             </div>
                         </div>
                     </div>
@@ -340,7 +333,8 @@
 
                 <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div  class="swiper-button-prev"></div>
+                
             </div>
         </section>
         <section class="section reviews" id="reviews" data-aos="fade-up">
@@ -352,9 +346,9 @@
                         src="img/icons/booking.png" alt=""></img> </a>
             </div>
             <div class="reviews_container">
-                <img src="img/reviews/1.jpg" alt="" class="reviews_img">
-                <img src="img/reviews/2.jpg" alt="" class="reviews_img">
-                <img src="img/reviews/3.jpg" alt="" class="reviews_img">
+                <img src="img/reviews/1.jpg" alt="" class="reviews_img"  data-aos="fade-up">
+                <img src="img/reviews/2.jpg" alt="" class="reviews_img"  data-aos="fade-up">
+                <img src="img/reviews/3.jpg" alt="" class="reviews_img"  data-aos="fade-up">
             </div>
         </section>
     </div>
@@ -390,9 +384,9 @@
         </div>
 
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="swiper.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/script.js"></script>
 
 </body>
 
