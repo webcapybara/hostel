@@ -58,18 +58,23 @@
 
 @media screen and (max-width: 1200px) {
 
-   
+
     .facility {
         width: 25%;
     }
 
 }
+
 @media screen and (max-width: 760px) {
     .space_container {
         flex-direction: column;
     }
-    .aparts_title {padding-right: 0;
-    text-align: center;}
+
+    .aparts_title {
+        padding-right: 0;
+        text-align: center;
+    }
+
     .aparts_pick {
         width: 100%;
         text-align: center;
@@ -79,27 +84,35 @@
     .aparts_info {
         width: 100%;
     }
-    .aparts_img_head{
+
+    .aparts_img_head {
         width: auto;
     }
+
     .menu {
         flex-direction: column;
     }
+
     .aparts_info {
         flex-direction: column;
         height: auto;
+        padding: 0;
     }
+
     .aparts_text {
         width: 100%;
         margin: 20px 0;
         margin-top: 0;
     }
+
     .main_info {
         width: 100%;
     }
+
     .around_slide {
         flex-direction: column;
     }
+
     .aparts_pick {
         display: none;
     }
@@ -111,27 +124,33 @@
     #id5 {
         display: flex;
     }
+
     .facility {
         width: 50%;
     }
-.button_price {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 40px;
-    right: 0;
-}
-.menu_list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.menu_list a {
-    margin-top: 10px;
-    text-align: center;
-}
-.reviews_container {
-    flex-direction: column;
-    padding: 0;
-    margin-top: 40px;
-}
+
+    .button_price {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 40px;
+        right: 0;
+    }
+
+    .menu_list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu_list a {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .reviews_container {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 40px;
+    }
+
 }
