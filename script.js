@@ -103,18 +103,6 @@ var swiperhead = new Swiper('.swiper_around', {
 });
 
 
-
-//плавное появление страницы
-/* setTimeout(function(){
-	document.body.classList.add('body_visible');
-}, 1000);
- */
-
-//активный пункт меню
-
-
-
-
 AOS.init();
 
 // You can also pass an optional settings object
@@ -141,33 +129,6 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-/* function activecor() {
-    'use strict';
-  
-    var section = document.querySelectorAll(".section");
-    var sections = {};
-    var i = 0;
-  
-    Array.prototype.forEach.call(section, function(e) {
-      sections[e.id] = e.offsetTop-200;
-      console.log(e.offsetTop);
-      
-    });
-  
-    window.onscroll = function() {
-      var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-  
-      for (i in sections) {
-        if (sections[i] <= scrollPosition) {
-          document.querySelector('.active').setAttribute('class', ' ');
-          document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
-          
-        }
-      }
-    };
-    
-  };
-activecor.init(); */
 
 
 const modalCall = ("[data-modal]");
